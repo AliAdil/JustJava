@@ -14,12 +14,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(2);
-        displayPrice(2*5);
+        int numberOfCoffees = 2;
+        display(numberOfCoffees);
+        displayPrice(numberOfCoffees * 20);
     }
 
     /**
@@ -27,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
      */
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        number +=1;
         quantityTextView.setText("" + number);
     }
+
     /**
      * This method displays the given price on the screen.
      */
