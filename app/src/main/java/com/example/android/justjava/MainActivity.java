@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(1);
+        display(2*2);
     }
 
     /**
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        number++;
+
         quantityTextView.setText("" + number);
     }
 }
