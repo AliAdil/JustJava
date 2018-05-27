@@ -18,21 +18,21 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the order button is clicked.
      */
+    int quantity = 2 ;
     public void submitOrder(View view) {
-        int quantity = 2;
+         quantity = 2;
         display(quantity);
         displayPrice(quantity * 20);
     }
     public void increment(View view) {
-        int quantity = 2;
-        quantity= quantity + quantity  * quantity - quantity;
+
         quantity= quantity + 1;
-        quantity= quantity + 1;
+
         display(quantity);
 
     }
     public void decrement(View view) {
-        int quantity = 2;
+         
         quantity = quantity- 1;
         display(quantity);
 
