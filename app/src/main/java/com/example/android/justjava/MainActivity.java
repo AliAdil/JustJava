@@ -24,12 +24,14 @@ public class MainActivity extends AppCompatActivity {
         displayPrice(quantity * 20);
     }
     public void increment(View view) {
-        int quantity = 3;
+        int quantity = 2;
+        quantity= 3;
         display(quantity);
 
     }
     public void decrement(View view) {
-        int quantity = 1;
+        int quantity = 2;
+        quantity = 1;
         display(quantity);
 
     }
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
 
-        
+
     }
 
     /**
