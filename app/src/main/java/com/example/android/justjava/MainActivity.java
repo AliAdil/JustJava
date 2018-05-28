@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view) {
 
         //displayPrice(quantity * 20);
-        String priceMessage = "Amount Due " + "$10";
+        String priceMessage = "Total item count " + quantity + " coffees";
         displayMessage(priceMessage);
     }
 
