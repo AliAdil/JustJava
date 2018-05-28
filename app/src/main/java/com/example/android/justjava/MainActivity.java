@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submitOrder(View view) {
-
+        int price = quantity*5;
         //displayPrice(quantity * 20);
-        String priceMessage = "Total item count " + quantity + " coffees";
+        String priceMessage = "Total: $ " + price ;
         displayMessage(priceMessage);
     }
 
